@@ -65,8 +65,7 @@ function DataTable() {
             <h2 className="p-3 bg-slate-300 my-2 items-center rounded">My Contacts</h2>
             <DataGrid rows={contactData} columns={columns} rowsPerPageOptions={[5]}
             checkboxSelection={true}
-            autoHeight
-            autoPageSize 
+            
             onSelectionModelChange={ (item:any) => {
               setSelectionModel(item)
               

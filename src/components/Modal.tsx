@@ -16,14 +16,14 @@ const Modal = ( props: Props ) => {
             justify-center align-middle bg-gray-700 bg-opacity-25'
         >
             <div
-                className='max-w-300px w-2/5 fixed flex z-1 mt-20 bg-white shadow-xl rounded'
+                className='max-w-200px w-3/5 fixed flex z-1 mt-10 bg-white shadow-xl rounded'
                 onClick={(e) => {
                     e.stopPropagation()
                 }}    
             >
                 <div className="w-full flex flex-col">
                     <div className="flex flex-row space-apart">
-                        <button className="flex justify-start m-3 bg-slate-300 p-2 rounded hover:bg-slate-400 text-black"
+                        <button className="flex justify-center m-3 bg-slate-300 p-2 rounded hover:bg-slate-400 text-black"
                         onClick={props.onClose}>
                             ?
                             
