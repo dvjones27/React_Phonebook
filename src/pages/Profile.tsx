@@ -1,6 +1,6 @@
 import Background from '../assets/images/amir-hanna-sweUF7FcyP4-unsplash.jpg'
 import Image from '../assets/images/amir-hanna-sweUF7FcyP4-unsplash.jpg';
-// import Modal from './Modal'
+import Modal from './Modal'
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { server_calls } from '../api/server';
