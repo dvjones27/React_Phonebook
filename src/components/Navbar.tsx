@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from './Button'
 import { signInWithPopup, signOut } from 'firebase/auth'
 import { auth, Providers } from '../config/firebase'
-import Background from '../assets/images/amir-hanna-sweUF7FcyP4-unsplash.jpg'
-
-// import Background from '../assets/images/quino-al-8gWEAAXJjtI-unsplash.jpg'
+import Background from "../assets/images/amir-hanna-sweUF7FcyP4-unsplash.jpg";
 
 function Navbar() {
   const [isVisible, setIsVisible] =useState(false);

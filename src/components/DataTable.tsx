@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import Button from './Button'
 import Modal from './Modal'
 import { server_calls } from '../api/server';
-import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { DataGrid, GridColDef} from '@mui/x-data-grid';
+
 // import { DataGrid } from '@mui/x-data-grid';
 
 import { useGetData } from '../custom-hooks/FetchData';
 
 const columns: GridColDef[] = [
-  { field: 'id', headerName: "ID", width: 90, hide: true },
+  { field: 'id', headerName: "ID", width: 90, hideable: true },
   { field: 'name', headerName: 'Contact Name', flex: 1 },
   { field: 'email', headerName: 'Email', flex: 1},
   { field: 'phone_number', headerName: 'Phone Number', flex: 1},
@@ -63,10 +64,10 @@ function DataTable() {
           style={{ height: 500, width: '100%' }}
           >
             <h2 className="p-3 bg-slate-300 my-2 items-center rounded">My Contacts</h2>
-            <DataGrid rows={contactData} columns={columns} rowsPerPageOptions={[5]}
+            <DataGrid rows={contactData} columns={columns} 
             checkboxSelection={true}
             
-            onSelectionModelChange={ (item:any) => {
+            onRowSelectionModelChange={ (item:any) => {
               setSelectionModel(item)
               
             }}

@@ -5,7 +5,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    backgroundImage: { 'background': "url('../assets/videos/blackPhoneOnLaptop.mp4')" }
   },
   plugins: [],
 }

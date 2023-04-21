@@ -3,7 +3,7 @@
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`https://pear-sequoia-yuzu.glitch.me/api/contacts`,
+        const response = await fetch(`https://6442c48cb69b260076ed08dd--neon-piroshki-d3dbbf.netlify.app/api/contacts`,
         // change url to my glitch url once set up
         {
             method: 'GET',
@@ -21,7 +21,7 @@ export const server_calls = {
     },
 
     create: async (data: any = {}) => {
-        const response = await fetch(`https://pear-sequoia-yuzu.glitch.me/api/contacts`,
+        const response = await fetch(`https://6442c48cb69b260076ed08dd--neon-piroshki-d3dbbf.netlify.app/api/contacts`,
         {
             method: "POST",
             headers: {
@@ -39,7 +39,7 @@ export const server_calls = {
     },
 
     update: async (id:string, data: any = {}) => {
-        const response = await fetch(`https://plankton-app-46k8b.ondigitalocean.app/api/contacts/${id}`,
+        const response = await fetch(`https://6442c48cb69b260076ed08dd--neon-piroshki-d3dbbf.netlify.app/api/contacts/${id}`,
         {
             method: "POST",
             headers: {
@@ -57,7 +57,7 @@ export const server_calls = {
     },
 
     delete: async (id:string) => {
-        const response = await fetch(`https://pear-sequoia-yuzu.glitch.me/api/contacts/${id}`,
+        const response = await fetch(`https://6442c48cb69b260076ed08dd--neon-piroshki-d3dbbf.netlify.app/api/contacts/${id}`,
         {
             method: "DELETE",
             headers: {
